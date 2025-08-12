@@ -1,0 +1,7 @@
+<body class = "VerTareas">
+    <h1>Tus Tareas</h1>
+    @foreach (Tarea tarea in ViewBag.listaTareas)
+    {
+        <h3>@tarea.titulo</h3>
+    }
+</body>

@@ -19,7 +19,7 @@ public class AccountController : Controller
         Usuario usuario = BD.Login(username, contraseña);
         if(usuario != null){
         devolver = "Index";
-        HttpContext.Session.SetString("Usuario", usuario.ToString()); 
+        HttpContext.Session.SetString("Usuario", usuario.IDUsuario.ToString()); 
         }else{
             ViewBag.mensajeError = "Usuario o clave incorrecto";
         }

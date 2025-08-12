@@ -22,7 +22,7 @@ public static class BD
             connection.Execute(query, new{nombre, apellido, usuario, contraseña, foto, ultLogin});}
     }
 	
-    public static void nuevaTarea (Tarea tarea) {
+    public static void nuevaTarea (string titulo, string descripcion, DateTime fecha, bool finalizada, int IDUsuario) {
         string query ="INSERT INTO Tareas (titulo, descripcion, fecha, finalizada, IDUsuario) VALUES (@titulo, @descripcion, @fecha, @finalizada, @IDUsuario)";
         using (SqlConnection connection = new SqlConnection(connectionString)){
         connection.Execute(query, new{tarea});}

@@ -18,8 +18,28 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = z:\2025\PROG\TP06Bis_SV
 build_property._RazorSourceGeneratorDebug = 
 
+[z:/2025/PROG/TP06Bis_SV/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[z:/2025/PROG/TP06Bis_SV/Views/Account/Registrarse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3RyYXJzZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [z:/2025/PROG/TP06Bis_SV/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[z:/2025/PROG/TP06Bis_SV/Views/Home/ModificarTarea .cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNb2RpZmljYXJUYXJlYSAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[z:/2025/PROG/TP06Bis_SV/Views/Home/NuevaTarea.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxOdWV2YVRhcmVhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[z:/2025/PROG/TP06Bis_SV/Views/Home/VerTareas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxWZXJUYXJlYXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [z:/2025/PROG/TP06Bis_SV/Views/Shared/_Layout.cshtml]
