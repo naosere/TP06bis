@@ -30,12 +30,20 @@ public class AccountController : Controller
         return View("Registrarse");
     }
     [HttpPost]
-    public IActionResult RegistroGuardar(string nombre, string apellido, string usuario, string contraseña, string foto)
+    public IActionResult RegistroGuardar(string nombre, string apellido, string usuario, string contraseña, string confirmarContraseña)
     {
-        BD.Registro(nombre, apellido, usuario, contraseña, foto, (DateTime.Now));
+        string prueba = "PRUEBA";
+        string devolver = "Registrarse";
+        if (contraseña != confirmarContraseña){
+            ViewBag.mensajeError = "LAS CONTRASEÑAS NO COINCIDEN";}
+        else{
+        BD.Registro(nombre, apellido, usuario, contraseña, prueba, (DateTime.Now));
         Usuario aux = new Usuario();
         aux = BD.Login (usuario, contraseña);
         HttpContext.Session.SetString("Usuario", aux.ToString()); 
-        return View("Index");
+        devolver = "VerTareas";
+        }
+
+        return View(devolver);
     }
 }

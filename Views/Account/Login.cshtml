@@ -1,3 +1,13 @@
-<body class="">
+<body class = "Index">
+<h1>BIENVENIDOS AL HIMALAYA</h1>
+    <form action='@Url.Action("LoginGuardar","Home")' method="post">
+    <h2>Username:</h2> <p><input type="text" name = "username"></p>
+    <h2>Contraseña:</h2> <p><input type="password" name= "contraseña"></p>
+    <p><input type="submit" value = "Enviar"></p>
+    </form>
+        <h3>@ViewBag.MensajeError</h3>
+
+
+<a class ="registrarse" href='@Url.Action("Registro","Account")'class="btn">REGISTRARSE</a>
 
 </body>

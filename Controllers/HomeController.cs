@@ -30,21 +30,15 @@ public class HomeController : Controller
             return View("Registrarse");
         }
     }
-	public IActionResult NuevaTarea (/*formulario para que cargue las tareas*/){
-        return View();
-    }
-
-    [HttpPost]
-    public IActionResult NuevaTareaGuardar (string titulo, string descripcion, DateTime fecha, bool finalizada, int IDUsuario){
-        BD.nuevaTarea(titulo, descripcion, fecha, finalizada, (int.Parse(HttpContext.Session.GetString("Usuario"))));
+	[HttpPost]
+    public IActionResult NuevaTarea (string titulo, string descripcion, bool finalizada, int IDUsuario){
+        BD.nuevaTarea(titulo, descripcion, DateTime.Now, finalizada, (int.Parse(HttpContext.Session.GetString("Usuario"))));
         return View ("VerTareas");
     }
 
-	public IActionResult ModificarTarea(){
-        return View();
-    }
-	public IActionResult ModificarTareaGuardar (atributos de la tabla tareas){
-
+	public IActionResult ModificarTarea (string titulo, string descripcion, bool finalizada, int IDUsuario){
+        BD.nuevaTarea(titulo, descripcion, DateTime.Now, finalizada, (int.Parse(HttpContext.Session.GetString("Usuario"))));
+        return View ("VerTareas");
     }
 	public IActionResult EliminarTarea (int IDTarea){
         BD.eliminarTarea(IDTarea);

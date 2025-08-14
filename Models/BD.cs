@@ -5,7 +5,7 @@ namespace TP06Bis_SV.Models;
 
 public static class BD
 {
-       private static string connectionString = "Server=LocalHost;Database=TP06Bis_SV;TrustServerCertificate=True;Integrated Security=True;";
+       private static string connectionString = "Server=LocalHost;Database=Tareas;TrustServerCertificate=True;Integrated Security=True;";
 
        public static Usuario Login(string usuario, string contraseña){
         Usuario aux = new Usuario();
@@ -25,7 +25,7 @@ public static class BD
     public static void nuevaTarea (string titulo, string descripcion, DateTime fecha, bool finalizada, int IDUsuario) {
         string query ="INSERT INTO Tareas (titulo, descripcion, fecha, finalizada, IDUsuario) VALUES (@titulo, @descripcion, @fecha, @finalizada, @IDUsuario)";
         using (SqlConnection connection = new SqlConnection(connectionString)){
-        connection.Execute(query, new{tarea});}
+        connection.Execute(query, new{titulo, descripcion, fecha, finalizada, IDUsuario});}
     }//{asegurar que el controller llene el IDUSuario antes de mandar el objeto tarea como parametro)
 
     public static void modificarTarea (Tarea tarea){

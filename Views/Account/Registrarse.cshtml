@@ -1,0 +1,28 @@
+<body>    
+<main>
+        <form action='@Url.Action("RegistroGuardar","Account")' method="post">
+            <h2>Nombre:</h2> 
+            <p><input type="text" name="nombre" required></p>
+
+            <h2>Apellido:</h2> 
+            <p><input type="text" name="apellido" required></p>
+
+            <h2>Username:</h2> 
+            <p><input type="text" name="usuario" required></p>
+
+            <h2>Contraseña:</h2> 
+            <p><input type="password" name="contraseña" required></p>
+
+            <h2>Repetir contraseña:</h2> 
+            <p><input type="password" name="confirmarContraseña" required></p>
+
+            <h2 class="error">@ViewBag.mensajeError</h2>
+
+
+
+            <p><input type="submit" value="Enviar"></p>
+        </form>
+
+        <a class="login" href='@Url.Action("Login","Account")'>INICIAR SESIÓN</a>
+    </main>
+</body>
