@@ -9,10 +9,12 @@ public static class BD
 
        public static Usuario Login(string usuario, string contraseña){
         Usuario aux = new Usuario();
+        if (usuario != null && contraseña != null){
         using (SqlConnection connection = new SqlConnection(connectionString)){
-        string query = "SELECT * FROM Usuario WHERE usuario = @usuario AND contraseña = @contraseña";
+        string query = "SELECT * FROM Usuarios WHERE usuario = @usuario AND contraseña = @contraseña";
         aux = connection.QueryFirstOrDefault<Usuario>(query, new {usuario, contraseña});
         }         
+        }
         return aux;
     }
 

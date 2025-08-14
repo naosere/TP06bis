@@ -18,7 +18,7 @@ public class AccountController : Controller
         string devolver = "Login";
         Usuario usuario = BD.Login(username, contraseña);
         if(usuario != null){
-        devolver = "Index";
+        devolver = "VerTareas";
         HttpContext.Session.SetString("Usuario", usuario.IDUsuario.ToString()); 
         }else{
             ViewBag.mensajeError = "Usuario o clave incorrecto";
@@ -36,7 +36,7 @@ public class AccountController : Controller
         string devolver = "Registrarse";
         if (contraseña != confirmarContraseña){
             ViewBag.mensajeError = "LAS CONTRASEÑAS NO COINCIDEN";}
-        else{
+        else if (nombre != null && apellido != null && usuario != null && contraseña != null && prueba != null){
         BD.Registro(nombre, apellido, usuario, contraseña, prueba, (DateTime.Now));
         Usuario aux = new Usuario();
         aux = BD.Login (usuario, contraseña);

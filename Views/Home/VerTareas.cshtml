@@ -13,12 +13,12 @@
         <p>@tarea.fecha</p>
         <p>@tarea.finalizada</p>
           <!-- Botón para abrir el modal -->
-        <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal-@tarea.id">
+        <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal-@tarea.IDTare">
             Editar
         </button>
 
         <!-- Modal -->
-        <div class="modal fade" id="modal-@tarea.id" tabindex="-1">
+        <div class="modal fade" id="modal-@tarea.IDTarea" tabindex="-1">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -27,15 +27,18 @@
                     </div>
                     <div class="modal-body">
                         <form action='Url.Action("ModificarTarea","Home")' method="post" enctype="multipart/form-data"> 
-                        <p></p>
+                        <p>Titulo</p>
                         <p><input type="text" name="titulo" required></p>
 
-
+                        <p>Descripcion</p>
+                        <p><input type="text" name="descripcion" required></p>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
+
+        <a href='Url.Action("FinalizarTarea", "Home")'></a>
     }
 
     <!-- Modal para crear nueva tarea -->

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1kFOTDlKGf0=",
+  "dgSpecHash": "LZ0p12Nv54Cx1NomTVVJtQNJXt4KFl/Yslpu7/8j9GitPR1mNOeVnJta/5PvnB+UwBIc6bLstLPfpsxONsNpKA==",
   "success": true,
-  "projectFilePath": "Z:\\2025\\PROG\\TP06Bis_SV\\TP06Bis_SV.csproj",
+  "projectFilePath": "C:\\Users\\49627257\\TP06bis\\TP06Bis_SV.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\49627257\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\49627257\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
