@@ -19,29 +19,45 @@ public class HomeController : Controller
     }
 
 	public IActionResult VerTareas(){
-        List<Tarea> listaTareas = new List<Tarea>();
-        string IDUsuario = HttpContext.Session.GetString("Usuario");
-        if (IDUsuario != null){
-        listaTareas = BD.verTareas(int.Parse(IDUsuario));
-        ViewBag.listaTareas = listaTareas;
-        return View();
+        if (HttpContext.Session.GetString("Usuario") != null)
+        {
+            List<Tarea> listaTareas = new List<Tarea>();
+            int user = int.Parse(HttpContext.Session.GetString("Usuario"));
+            listaTareas = BD.verTareas(user);
+            ViewBag.listaTareas = listaTareas;
+            return View();
+
         }
         else {
-            return View("Registrarse");
+            return RedirectToAction("Registro", "Account");
         }
     }
 	[HttpPost]
     public IActionResult NuevaTarea (string titulo, string descripcion, bool finalizada, int IDUsuario){
         BD.nuevaTarea(titulo, descripcion, DateTime.Now, finalizada, (int.Parse(HttpContext.Session.GetString("Usuario"))));
+
+        List<Tarea> listaTareas = new List<Tarea>();
+        int user = int.Parse(HttpContext.Session.GetString("Usuario"));
+        listaTareas = BD.verTareas(user);
+        ViewBag.listaTareas = listaTareas;
+        
         return View ("VerTareas");
     }
 
 	public IActionResult ModificarTarea (string titulo, string descripcion, bool finalizada, int IDUsuario){
         BD.nuevaTarea(titulo, descripcion, DateTime.Now, finalizada, (int.Parse(HttpContext.Session.GetString("Usuario"))));
+        List<Tarea> listaTareas = new List<Tarea>();
+        int user = int.Parse(HttpContext.Session.GetString("Usuario"));
+        listaTareas = BD.verTareas(user);
+        ViewBag.listaTareas = listaTareas;
         return View ("VerTareas");
     }
 	public IActionResult EliminarTarea (int IDTarea){
         BD.eliminarTarea(IDTarea);
+        List<Tarea> listaTareas = new List<Tarea>();
+        int user = int.Parse(HttpContext.Session.GetString("Usuario"));
+        listaTareas = BD.verTareas(user);
+        ViewBag.listaTareas = listaTareas;
         return View("VerTareas");
     }
 	public IActionResult FinalizarTarea(int IDTarea){
@@ -55,6 +71,10 @@ public class HomeController : Controller
             finalizada = false;
             BD.finalizarTarea(IDTarea,finalizada);
         }
+        List<Tarea> listaTareas = new List<Tarea>();
+        int user = int.Parse(HttpContext.Session.GetString("Usuario"));
+        listaTareas = BD.verTareas(user);
+        ViewBag.listaTareas = listaTareas;
         return View ("VerTareas");
     }
 

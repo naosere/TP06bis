@@ -1,10 +1,22 @@
 <body class = "VerTareas">
     <h1>Tus Tareas</h1>
-    
-    <!-- Botón para abrir el modal de creación -->
-    <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#crearTareaModal">
-        Nueva tarea
-    </button>
+<div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <form action='@Url.Action("ModificarTarea","Home")' method="post">
+          <p>Titulo</p>
+          <p><input type="text" name="titulo" id="titulo"  required></p>
+
+          <p>Descripcion</p>
+          <p><input type="text" name="descripcion" required></p>
+
+          <p><input type="submit" value="Enviar"></p>
+          </form>
+      </div>
+    </div>
+  </div>    
+
 
     @foreach (Tarea tarea in ViewBag.listaTareas)
     {
@@ -12,69 +24,28 @@
         <p>@tarea.descripcion</p>
         <p>@tarea.fecha</p>
         <p>@tarea.finalizada</p>
-          <!-- Botón para abrir el modal -->
-        <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal-@tarea.IDTare">
-            Editar
-        </button>
-
-        <!-- Modal -->
-        <div class="modal fade" id="modal-@tarea.IDTarea" tabindex="-1">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Editar tarea</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form action='Url.Action("ModificarTarea","Home")' method="post" enctype="multipart/form-data"> 
-                        <p>Titulo</p>
-                        <p><input type="text" name="titulo" required></p>
-
-                        <p>Descripcion</p>
-                        <p><input type="text" name="descripcion" required></p>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <a href='Url.Action("FinalizarTarea", "Home")'></a>
+        
+        <div class="w3-container">
+        <button onclick="abrirmodal(@tarea.titulo,@tarea.descripcion)" class="w3-button w3-black">Modificar Tarea</button>
+</div>
     }
-
-    <!-- Modal para crear nueva tarea -->
-    <div class="modal fade" id="crearTareaModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Crear nueva tarea</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    @using (Html.BeginForm("NuevaTarea", "Home", FormMethod.Post))
-                    {
-                        <div class="mb-3">
-                            @Html.Label("Titulo")
-                            @Html.TextBox("Titulo", null, new { @class = "form-control" })
-                        </div>
-                        <div class="mb-3">
-                            @Html.Label("Descripcion")
-                            @Html.TextArea("Descripcion", null, new { @class = "form-control" })
-                        </div>
-                        <div class="mb-3">
-                            @Html.Label("Fecha")
-                            @Html.TextBox("Fecha", null, new { type = "date", @class = "form-control" })
-                        </div>
-                        <div class="mb-3 form-check">
-                            @Html.CheckBox("Finalizada", false, new { @class = "form-check-input" })
-                            @Html.Label("Finalizada", new { @class = "form-check-label" })
-                        </div>
-
-                        <button type="submit" class="btn btn-success">Crear tarea</button>
-                    }
-                </div>
-            </div>
-        </div>
-    </div>
+  
 
 
+<div class="w3-container">
+  <button onclick="AbrirNuevaTarea()" class="w3-button w3-black">Agregar Tarea</button>
+
+
+<script>
+  function abrirModal(titulo, descrip)
+  {
+    document.getElementById('id01').style.display='block';
+    document.getElementById("titulo").value = titulo;
+    document.getElementById("descrip").value = descrip;
+  }
+  function AbrirNuevaTarea()
+  {
+    document.getElementById('id01').style.display='block';
+  }
+</script>     
 </body>

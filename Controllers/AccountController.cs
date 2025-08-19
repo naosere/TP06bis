@@ -23,7 +23,7 @@ public class AccountController : Controller
         }else{
             ViewBag.mensajeError = "Usuario o clave incorrecto";
         }
-        return View(devolver);
+        return RedirectToAction(devolver, "Home");
     }
     public IActionResult Registro()
     {
@@ -33,17 +33,17 @@ public class AccountController : Controller
     public IActionResult RegistroGuardar(string nombre, string apellido, string usuario, string contraseña, string confirmarContraseña)
     {
         string prueba = "PRUEBA";
-        string devolver = "Registrarse";
+        string devolver = "Registro";
         if (contraseña != confirmarContraseña){
             ViewBag.mensajeError = "LAS CONTRASEÑAS NO COINCIDEN";}
         else if (nombre != null && apellido != null && usuario != null && contraseña != null && prueba != null){
         BD.Registro(nombre, apellido, usuario, contraseña, prueba, (DateTime.Now));
         Usuario aux = new Usuario();
         aux = BD.Login (usuario, contraseña);
-        HttpContext.Session.SetString("Usuario", aux.ToString()); 
+        HttpContext.Session.SetString("Usuario", aux.IDUsuario.ToString()); 
         devolver = "VerTareas";
         }
 
-        return View(devolver);
+        return RedirectToAction(devolver, "Home");
     }
 }
