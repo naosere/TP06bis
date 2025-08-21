@@ -22,21 +22,33 @@
 
     @foreach (Tarea tarea in ViewBag.listaTareas)
     {
+        <form action='@Url.Action("FinalizarTarea","Home")' method="post" style="display:inline;">
+          <input type="hidden" name="IDTarea" value="@tarea.IDTarea" />
+          <button type="submit" value = "probando" style="border:none;background:none;cursor:pointer;">
+              @if (tarea.finalizada)
+              {
+                  <img src = "~/imagenes/tilde.jpg">
+                  <p>FINALIZADA</p>
+              }
+              else
+              {
+                  <img src = "~/imagenes/cruz.jpg">
+                  <p>NO FINALIZADA</p>
+              }
+          </button>
+        </form>
         <h4>@tarea.titulo</h4>
         <p>@tarea.descripcion</p>
-        <p>@tarea.fecha</p>
-        if(tarea.finalizada){
-          <p>FINALIZADA</p>
-        }
-        else{
-          <p>NO FINALIZADA</p>
-        }
+        <p>@tarea.fecha.ToString("dd/MM/yyyy")</p>
 
         <div class="w3-container">
           <button onclick="abrirModal('@tarea.IDTarea','@tarea.titulo','@tarea.descripcion','@tarea.finalizada')" class="w3-button w3-black">Modificar Tarea</button>
         </div>
         <div>
-          
+          <form action='@Url.Action("EliminarTarea", "Home")' method="post">
+            <input type="hidden" name="IDTarea" value="@tarea.IDTarea" />
+            <button type="submit">ELIMINAR TAREA</button>
+          </form>
         </div>
     }
   
@@ -54,7 +66,7 @@
     document.getElementById("descrip").value = descrip;
     document.getElementById("IDTarea").value = IDTarea;
     document.getElementById("finalizada").value = finalizada;
-    document.getElementById("direccion").value = false; // Modificar
+    document.getElementById("direccion").value = false;
   }
 
   function AbrirNuevaTarea()
@@ -64,7 +76,7 @@
     document.getElementById("descrip").value = "";
     document.getElementById("IDTarea").value = "";
     document.getElementById("finalizada").value = false;
-    document.getElementById("direccion").value = true; // Nueva
+    document.getElementById("direccion").value = true;
   }
 </script>     
 </body>

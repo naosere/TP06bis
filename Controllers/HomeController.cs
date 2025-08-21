@@ -57,13 +57,13 @@ public class HomeController : Controller
 	public IActionResult FinalizarTarea(int IDTarea){
         Tarea aux = new Tarea();
         aux = BD.verTarea(IDTarea);
-        bool finalizada = true;
-        if (aux.finalizada){
-            BD.finalizarTarea(IDTarea,finalizada);
+        bool hecha = true;
+        if (!aux.finalizada){
+            BD.finalizarTarea(IDTarea,hecha);
         }
         else{
-            finalizada = false;
-            BD.finalizarTarea(IDTarea,finalizada);
+            hecha = false;
+            BD.finalizarTarea(IDTarea,hecha);
         }
         List<Tarea> listaTareas = new List<Tarea>();
         int user = int.Parse(HttpContext.Session.GetString("Usuario"));

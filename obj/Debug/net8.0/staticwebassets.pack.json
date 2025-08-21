@@ -9,6 +9,22 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "Z:\\2025\\PROG\\TP06Bis_SV\\wwwroot\\imagenes\\Thumbs.db",
+      "PackagePath": "staticwebassets\\imagenes\\Thumbs.db"
+    },
+    {
+      "Id": "Z:\\2025\\PROG\\TP06Bis_SV\\wwwroot\\imagenes\\cruz.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\cruz.jpg"
+    },
+    {
+      "Id": "Z:\\2025\\PROG\\TP06Bis_SV\\wwwroot\\imagenes\\tilde.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\tilde.jpg"
+    },
+    {
+      "Id": "Z:\\2025\\PROG\\TP06Bis_SV\\wwwroot\\imagenes\\tilde.webp",
+      "PackagePath": "staticwebassets\\imagenes\\tilde.webp"
+    },
+    {
       "Id": "Z:\\2025\\PROG\\TP06Bis_SV\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
