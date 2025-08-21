@@ -4,17 +4,17 @@
     <div class="w3-modal-content">
       <div class="w3-container">
         <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-        <form action='@Url.Action("ModificarTarea","Home")' method="post">
+        <form action='@Url.Action("GuardarTarea","Home")' method="post">
+
+            <input type="hidden" name="IDTarea" id="IDTarea">
           <p>Titulo</p>
-          <p><input type="text" name="titulo" id="titulo"  required></p>
-          <input type="hidden" name="IDTarea" id="IDTarea"  required>
-          <input type="hidden" name="finalizada" id="finalizada"  required>
-
+          <p><input type="text" name="titulo" id="titulo" required></p>
           <p>Descripcion</p>
-          <p><input type="text" name="descripcion"  id="descrip" required></p>
-
+          <p><input type="text" name="descripcion" id="descrip" required></p>
+          <input type="hidden" name="finalizada" id="finalizada">
+          <input type="hidden" name="direccion" id="direccion">
           <p><input type="submit" value="Enviar"></p>
-          </form>
+        </form>
       </div>
     </div>
   </div>    
@@ -30,33 +30,41 @@
         }
         else{
           <p>NO FINALIZADA</p>
-
         }
 
         <div class="w3-container">
-        <button onclick="abrirModal('@tarea.titulo','@tarea.descripcion','@tarea.IDTarea','@tarea.finalizada')" class="w3-button w3-black">Modificar Tarea</button>
-</div>
+          <button onclick="abrirModal('@tarea.IDTarea','@tarea.titulo','@tarea.descripcion','@tarea.finalizada')" class="w3-button w3-black">Modificar Tarea</button>
+        </div>
+        <div>
+          
+        </div>
     }
   
 
-
 <div class="w3-container">
   <button onclick="AbrirNuevaTarea()" class="w3-button w3-black">Agregar Tarea</button>
+</div>
 
 
 <script>
-  function abrirModal(titulo, descrip)
+  function abrirModal(IDTarea, titulo, descrip, finalizada)
   {
     document.getElementById('id01').style.display='block';
     document.getElementById("titulo").value = titulo;
     document.getElementById("descrip").value = descrip;
     document.getElementById("IDTarea").value = IDTarea;
     document.getElementById("finalizada").value = finalizada;
-    
+    document.getElementById("direccion").value = false; // Modificar
   }
+
   function AbrirNuevaTarea()
   {
     document.getElementById('id01').style.display='block';
+    document.getElementById("titulo").value = "";
+    document.getElementById("descrip").value = "";
+    document.getElementById("IDTarea").value = "";
+    document.getElementById("finalizada").value = false;
+    document.getElementById("direccion").value = true; // Nueva
   }
 </script>     
 </body>

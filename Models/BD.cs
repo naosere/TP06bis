@@ -32,8 +32,8 @@ public static class BD
 
     public static void modificarTarea (int IDTarea, string titulo, string descripcion, DateTime fecha, bool finalizada, int IDUsuario){
         using (SqlConnection connection = new SqlConnection(connectionString)){
-        string query = "UPDATE Tareas SET titulo = titulo, descripcion = descripcion, fecha = fecha, finalizada = finalizada, IDUsuario = IDUsuario1 WHERE IDTarea = IDTarea";
-        connection.Execute(query, new{titulo, descripcion, fecha, finalizada, IDUsuario});}
+        string query = "UPDATE Tareas SET titulo = @titulo, descripcion = @descripcion, fecha = @fecha, finalizada = @finalizada, IDUsuario = @IDUsuario WHERE IDTarea = @IDTarea";
+        connection.Execute(query, new{IDTarea, titulo, descripcion, fecha, finalizada, IDUsuario});}
         }         
     // (cuando el usuario quiere modificar la tarea y va al formulario, no queremos que aparezcan los espacios vacios, sino con la info llena p modificar)
 

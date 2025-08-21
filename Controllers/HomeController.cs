@@ -32,21 +32,16 @@ public class HomeController : Controller
             return RedirectToAction("Registro", "Account");
         }
     }
-	[HttpPost]
-    public IActionResult NuevaTarea (string titulo, string descripcion, bool finalizada, int IDUsuario){
-        BD.nuevaTarea(titulo, descripcion, DateTime.Now, finalizada, (int.Parse(HttpContext.Session.GetString("Usuario"))));
-        List<Tarea> listaTareas = new List<Tarea>();
-        int user = int.Parse(HttpContext.Session.GetString("Usuario"));
-        listaTareas = BD.verTareas(user);
-        ViewBag.listaTareas = listaTareas;
-        
-        return View ("VerTareas");
-    }
 
-	public IActionResult ModificarTarea (int IDTarea, string titulo, string descripcion, bool finalizada, int IDUsuario){
-        BD.modificarTarea(IDTarea, titulo, descripcion, DateTime.Now, finalizada, (int.Parse(HttpContext.Session.GetString("Usuario"))));
-        List<Tarea> listaTareas = new List<Tarea>();
+	public IActionResult GuardarTarea (int IDTarea, string titulo, string descripcion, bool finalizada, bool direccion){
         int user = int.Parse(HttpContext.Session.GetString("Usuario"));
+        if (!direccion){
+            BD.modificarTarea(IDTarea, titulo, descripcion, DateTime.Now, finalizada, user);
+        }
+        else{
+            BD.nuevaTarea(titulo, descripcion, DateTime.Now, finalizada, user);
+        }
+        List<Tarea> listaTareas = new List<Tarea>();
         listaTareas = BD.verTareas(user);
         ViewBag.listaTareas = listaTareas;
         return View ("VerTareas");
