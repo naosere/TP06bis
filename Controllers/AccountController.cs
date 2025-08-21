@@ -16,14 +16,16 @@ public class AccountController : Controller
     {   
         ViewBag.mensajeError = "";
         string devolver = "Login";
+        string devolverController = "Account";
         Usuario usuario = BD.Login(username, contraseña);
         if(usuario != null){
-        devolver = "VerTareas";
+            devolver = "VerTareas";
+            devolverController = "Home";
         HttpContext.Session.SetString("Usuario", usuario.IDUsuario.ToString()); 
         }else{
             ViewBag.mensajeError = "Usuario o clave incorrecto";
         }
-        return RedirectToAction(devolver, "Home");
+        return RedirectToAction(devolver, devolverController);
     }
     public IActionResult Registro()
     {

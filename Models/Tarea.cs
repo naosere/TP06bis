@@ -17,6 +17,6 @@ public class Tarea
     public int IDUsuario{ get; private set; }
 
 
-
+    
 
 }

@@ -1,5 +1,4 @@
 Z:\2025\PROG\TP06Bis_SV\obj\Debug\net8.0\TP06Bis_SV.csproj.AssemblyReference.cache
-Z:\2025\PROG\TP06Bis_SV\obj\Debug\net8.0\rpswa.dswa.cache.json
 Z:\2025\PROG\TP06Bis_SV\obj\Debug\net8.0\TP06Bis_SV.GeneratedMSBuildEditorConfig.editorconfig
 Z:\2025\PROG\TP06Bis_SV\obj\Debug\net8.0\TP06Bis_SV.AssemblyInfoInputs.cache
 Z:\2025\PROG\TP06Bis_SV\obj\Debug\net8.0\TP06Bis_SV.AssemblyInfo.cs
@@ -11,7 +10,6 @@ Z:\2025\PROG\TP06Bis_SV\obj\Debug\net8.0\TP06Bis_SV.sourcelink.json
 Z:\2025\PROG\TP06Bis_SV\bin\Debug\net8.0\appsettings.Development.json
 Z:\2025\PROG\TP06Bis_SV\bin\Debug\net8.0\appsettings.json
 Z:\2025\PROG\TP06Bis_SV\bin\Debug\net8.0\TP06Bis_SV.staticwebassets.runtime.json
-Z:\2025\PROG\TP06Bis_SV\bin\Debug\net8.0\TP06Bis_SV.staticwebassets.endpoints.json
 Z:\2025\PROG\TP06Bis_SV\bin\Debug\net8.0\TP06Bis_SV.exe
 Z:\2025\PROG\TP06Bis_SV\bin\Debug\net8.0\TP06Bis_SV.deps.json
 Z:\2025\PROG\TP06Bis_SV\bin\Debug\net8.0\TP06Bis_SV.runtimeconfig.json
@@ -67,17 +65,17 @@ Z:\2025\PROG\TP06Bis_SV\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.
 Z:\2025\PROG\TP06Bis_SV\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 Z:\2025\PROG\TP06Bis_SV\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
 Z:\2025\PROG\TP06Bis_SV\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
-Z:\2025\PROG\TP06Bis_SV\obj\Debug\net8.0\rjimswa.dswa.cache.json
-Z:\2025\PROG\TP06Bis_SV\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
-Z:\2025\PROG\TP06Bis_SV\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
 Z:\2025\PROG\TP06Bis_SV\obj\Debug\net8.0\scopedcss\bundle\TP06Bis_SV.styles.css
 Z:\2025\PROG\TP06Bis_SV\obj\Debug\net8.0\staticwebassets.build.json
-Z:\2025\PROG\TP06Bis_SV\obj\Debug\net8.0\staticwebassets.build.json.cache
 Z:\2025\PROG\TP06Bis_SV\obj\Debug\net8.0\staticwebassets.development.json
-Z:\2025\PROG\TP06Bis_SV\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 Z:\2025\PROG\TP06Bis_SV\obj\Debug\net8.0\TP06Bis_SV.csproj.Up2Date
 Z:\2025\PROG\TP06Bis_SV\obj\Debug\net8.0\TP06Bis_SV.dll
 Z:\2025\PROG\TP06Bis_SV\obj\Debug\net8.0\refint\TP06Bis_SV.dll
 Z:\2025\PROG\TP06Bis_SV\obj\Debug\net8.0\TP06Bis_SV.pdb
 Z:\2025\PROG\TP06Bis_SV\obj\Debug\net8.0\TP06Bis_SV.genruntimeconfig.cache
 Z:\2025\PROG\TP06Bis_SV\obj\Debug\net8.0\ref\TP06Bis_SV.dll
+Z:\2025\PROG\TP06Bis_SV\obj\Debug\net8.0\staticwebassets\msbuild.TP06Bis_SV.Microsoft.AspNetCore.StaticWebAssets.props
+Z:\2025\PROG\TP06Bis_SV\obj\Debug\net8.0\staticwebassets\msbuild.build.TP06Bis_SV.props
+Z:\2025\PROG\TP06Bis_SV\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.TP06Bis_SV.props
+Z:\2025\PROG\TP06Bis_SV\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.TP06Bis_SV.props
+Z:\2025\PROG\TP06Bis_SV\obj\Debug\net8.0\staticwebassets.pack.json

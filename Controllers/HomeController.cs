@@ -35,7 +35,6 @@ public class HomeController : Controller
 	[HttpPost]
     public IActionResult NuevaTarea (string titulo, string descripcion, bool finalizada, int IDUsuario){
         BD.nuevaTarea(titulo, descripcion, DateTime.Now, finalizada, (int.Parse(HttpContext.Session.GetString("Usuario"))));
-
         List<Tarea> listaTareas = new List<Tarea>();
         int user = int.Parse(HttpContext.Session.GetString("Usuario"));
         listaTareas = BD.verTareas(user);
@@ -44,8 +43,8 @@ public class HomeController : Controller
         return View ("VerTareas");
     }
 
-	public IActionResult ModificarTarea (string titulo, string descripcion, bool finalizada, int IDUsuario){
-        BD.nuevaTarea(titulo, descripcion, DateTime.Now, finalizada, (int.Parse(HttpContext.Session.GetString("Usuario"))));
+	public IActionResult ModificarTarea (int IDTarea, string titulo, string descripcion, bool finalizada, int IDUsuario){
+        BD.modificarTarea(IDTarea, titulo, descripcion, DateTime.Now, finalizada, (int.Parse(HttpContext.Session.GetString("Usuario"))));
         List<Tarea> listaTareas = new List<Tarea>();
         int user = int.Parse(HttpContext.Session.GetString("Usuario"));
         listaTareas = BD.verTareas(user);
