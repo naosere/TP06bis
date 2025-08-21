@@ -3,7 +3,7 @@
 <div id="id01" class="w3-modal">
     <div class="w3-modal-content">
       <div class="w3-container">
-        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <span onclick="document.getElementById('id01').style.display='none'" class="">&times;</span>
         <form action='@Url.Action("GuardarTarea","Home")' method="post">
 
             <input type="hidden" name="IDTarea" id="IDTarea">
@@ -22,27 +22,41 @@
 
     @foreach (Tarea tarea in ViewBag.listaTareas)
     {
+        <section class="Tarea">
+        <form class= "Finalizar"action='@Url.Action("FinalizarTarea","Home")' method="post" style="display:inline;">
+          <input type="hidden" name="IDTarea" value="@tarea.IDTarea" />
+          <button type="submit" value = "probando" style="border:none;background:none;cursor:pointer;">
+              @if (tarea.finalizada)
+              {
+                  <img src = "~/imagenes/tilde.jpg">
+                  <p>FINALIZADA</p>
+              }
+              else
+              {
+                  <img src = "~/imagenes/cruz.jpg">
+                  <p>NO FINALIZADA</p>
+              }
+          </button>
+        </form>
         <h4>@tarea.titulo</h4>
         <p>@tarea.descripcion</p>
-        <p>@tarea.fecha</p>
-        if(tarea.finalizada){
-          <p>FINALIZADA</p>
-        }
-        else{
-          <p>NO FINALIZADA</p>
-        }
+        <p>@tarea.fecha.ToString("dd/MM/yyyy")</p>
 
-        <div class="w3-container">
-          <button onclick="abrirModal('@tarea.IDTarea','@tarea.titulo','@tarea.descripcion','@tarea.finalizada')" class="w3-button w3-black">Modificar Tarea</button>
+        <div>
+          <button onclick="abrirModal('@tarea.IDTarea','@tarea.titulo','@tarea.descripcion','@tarea.finalizada')" class="">Modificar Tarea</button>
         </div>
         <div>
-          
+          <form action='@Url.Action("EliminarTarea", "Home")' method="post">
+            <input type="hidden" name="IDTarea" value="@tarea.IDTarea" />
+            <button type="submit" class="Elim">ELIMINAR TAREA</button>
+          </form>
         </div>
+        </section>
     }
   
 
-<div class="w3-container">
-  <button onclick="AbrirNuevaTarea()" class="w3-button w3-black">Agregar Tarea</button>
+<div class="agreg">
+  <button onclick="AbrirNuevaTarea()" class="agreg">Agregar Tarea</button>
 </div>
 
 
@@ -54,7 +68,7 @@
     document.getElementById("descrip").value = descrip;
     document.getElementById("IDTarea").value = IDTarea;
     document.getElementById("finalizada").value = finalizada;
-    document.getElementById("direccion").value = false; // Modificar
+    document.getElementById("direccion").value = false;
   }
 
   function AbrirNuevaTarea()
@@ -64,7 +78,7 @@
     document.getElementById("descrip").value = "";
     document.getElementById("IDTarea").value = "";
     document.getElementById("finalizada").value = false;
-    document.getElementById("direccion").value = true; // Nueva
+    document.getElementById("direccion").value = true;
   }
 </script>     
 </body>

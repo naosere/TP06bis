@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QIms0UyKoAOjYMERPJ3kMLhWDGT9rf2T2qYCgpkjrI0=",
+  "Hash": "ukmZxrXLwkpRrj42xcFFZnuqebomPCOaz7+lPglIJug=",
   "Source": "TP06Bis_SV",
   "BasePath": "_content/TP06Bis_SV",
   "Mode": "Default",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "z7h3v0m9bg",
-      "Integrity": "EWecbZ3AkyrYoIcUqa+iDjbqusQr+PMqhL8PxoUnUy4=",
+      "Fingerprint": "lm5ub3yzzq",
+      "Integrity": "/S4NxGlhb74/4uCIHsuecnENwRX55po4r2FIOpTKTqo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -57,6 +57,90 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\49194424\\TP06bis\\wwwroot\\imagenes\\cruz.jpg",
+      "SourceId": "TP06Bis_SV",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\49194424\\TP06bis\\wwwroot\\",
+      "BasePath": "_content/TP06Bis_SV",
+      "RelativePath": "imagenes/cruz#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yxvh8bcmav",
+      "Integrity": "CvB8lEw3auO7UtqSJgeFuUmQ7/wrvxjpd2uqjeD0/4s=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\cruz.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\49194424\\TP06bis\\wwwroot\\imagenes\\Thumbs.db",
+      "SourceId": "TP06Bis_SV",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\49194424\\TP06bis\\wwwroot\\",
+      "BasePath": "_content/TP06Bis_SV",
+      "RelativePath": "imagenes/Thumbs#[.{fingerprint}]?.db",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1s5po6xunn",
+      "Integrity": "gWmoSAzxi81eqyW446Yb0LKLrPT4ds9JTllWT4uQKSU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\Thumbs.db"
+    },
+    {
+      "Identity": "C:\\Users\\49194424\\TP06bis\\wwwroot\\imagenes\\tilde.jpg",
+      "SourceId": "TP06Bis_SV",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\49194424\\TP06bis\\wwwroot\\",
+      "BasePath": "_content/TP06Bis_SV",
+      "RelativePath": "imagenes/tilde#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "r313jmkt61",
+      "Integrity": "qUwIqgCObhWOxTCStqB4/YMHyOPBfNwqrt4921PZbo8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\tilde.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\49194424\\TP06bis\\wwwroot\\imagenes\\tilde.webp",
+      "SourceId": "TP06Bis_SV",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\49194424\\TP06bis\\wwwroot\\",
+      "BasePath": "_content/TP06Bis_SV",
+      "RelativePath": "imagenes/tilde#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fliuv11d8l",
+      "Integrity": "XdOAuec5foS2LAk2VkwJAbvcbCO1cY/09Mx4GirBqr4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\tilde.webp"
     },
     {
       "Identity": "C:\\Users\\49194424\\TP06bis\\wwwroot\\js\\site.js",
@@ -344,7 +428,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2147"
+          "Value": "4818"
         },
         {
           "Name": "Content-Type",
@@ -352,11 +436,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"EWecbZ3AkyrYoIcUqa+iDjbqusQr+PMqhL8PxoUnUy4=\""
+          "Value": "\"/S4NxGlhb74/4uCIHsuecnENwRX55po4r2FIOpTKTqo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 21 Aug 2025 18:09:08 GMT"
+          "Value": "Thu, 21 Aug 2025 18:59:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -366,12 +450,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-EWecbZ3AkyrYoIcUqa+iDjbqusQr+PMqhL8PxoUnUy4="
+          "Value": "sha256-/S4NxGlhb74/4uCIHsuecnENwRX55po4r2FIOpTKTqo="
         }
       ]
     },
     {
-      "Route": "css/site.z7h3v0m9bg.css",
+      "Route": "css/site.lm5ub3yzzq.css",
       "AssetFile": "C:\\Users\\49194424\\TP06bis\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -381,7 +465,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2147"
+          "Value": "4818"
         },
         {
           "Name": "Content-Type",
@@ -389,11 +473,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"EWecbZ3AkyrYoIcUqa+iDjbqusQr+PMqhL8PxoUnUy4=\""
+          "Value": "\"/S4NxGlhb74/4uCIHsuecnENwRX55po4r2FIOpTKTqo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 21 Aug 2025 18:09:08 GMT"
+          "Value": "Thu, 21 Aug 2025 18:59:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -403,7 +487,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "z7h3v0m9bg"
+          "Value": "lm5ub3yzzq"
         },
         {
           "Name": "label",
@@ -411,7 +495,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-EWecbZ3AkyrYoIcUqa+iDjbqusQr+PMqhL8PxoUnUy4="
+          "Value": "sha256-/S4NxGlhb74/4uCIHsuecnENwRX55po4r2FIOpTKTqo="
         }
       ]
     },
@@ -494,6 +578,334 @@
         {
           "Name": "integrity",
           "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/cruz.jpg",
+      "AssetFile": "C:\\Users\\49194424\\TP06bis\\wwwroot\\imagenes\\cruz.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7885"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CvB8lEw3auO7UtqSJgeFuUmQ7/wrvxjpd2uqjeD0/4s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 21 Aug 2025 18:12:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CvB8lEw3auO7UtqSJgeFuUmQ7/wrvxjpd2uqjeD0/4s="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/cruz.yxvh8bcmav.jpg",
+      "AssetFile": "C:\\Users\\49194424\\TP06bis\\wwwroot\\imagenes\\cruz.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7885"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CvB8lEw3auO7UtqSJgeFuUmQ7/wrvxjpd2uqjeD0/4s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 21 Aug 2025 18:12:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yxvh8bcmav"
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/cruz.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CvB8lEw3auO7UtqSJgeFuUmQ7/wrvxjpd2uqjeD0/4s="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/Thumbs.1s5po6xunn.db",
+      "AssetFile": "C:\\Users\\49194424\\TP06bis\\wwwroot\\imagenes\\Thumbs.db",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16384"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gWmoSAzxi81eqyW446Yb0LKLrPT4ds9JTllWT4uQKSU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 21 Aug 2025 18:12:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1s5po6xunn"
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/Thumbs.db"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gWmoSAzxi81eqyW446Yb0LKLrPT4ds9JTllWT4uQKSU="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/Thumbs.db",
+      "AssetFile": "C:\\Users\\49194424\\TP06bis\\wwwroot\\imagenes\\Thumbs.db",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16384"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gWmoSAzxi81eqyW446Yb0LKLrPT4ds9JTllWT4uQKSU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 21 Aug 2025 18:12:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gWmoSAzxi81eqyW446Yb0LKLrPT4ds9JTllWT4uQKSU="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/tilde.fliuv11d8l.webp",
+      "AssetFile": "C:\\Users\\49194424\\TP06bis\\wwwroot\\imagenes\\tilde.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7810"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XdOAuec5foS2LAk2VkwJAbvcbCO1cY/09Mx4GirBqr4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 21 Aug 2025 18:12:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fliuv11d8l"
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/tilde.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XdOAuec5foS2LAk2VkwJAbvcbCO1cY/09Mx4GirBqr4="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/tilde.jpg",
+      "AssetFile": "C:\\Users\\49194424\\TP06bis\\wwwroot\\imagenes\\tilde.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5902"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qUwIqgCObhWOxTCStqB4/YMHyOPBfNwqrt4921PZbo8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 21 Aug 2025 18:12:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qUwIqgCObhWOxTCStqB4/YMHyOPBfNwqrt4921PZbo8="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/tilde.r313jmkt61.jpg",
+      "AssetFile": "C:\\Users\\49194424\\TP06bis\\wwwroot\\imagenes\\tilde.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5902"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qUwIqgCObhWOxTCStqB4/YMHyOPBfNwqrt4921PZbo8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 21 Aug 2025 18:12:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "r313jmkt61"
+        },
+        {
+          "Name": "label",
+          "Value": "imagenes/tilde.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qUwIqgCObhWOxTCStqB4/YMHyOPBfNwqrt4921PZbo8="
+        }
+      ]
+    },
+    {
+      "Route": "imagenes/tilde.webp",
+      "AssetFile": "C:\\Users\\49194424\\TP06bis\\wwwroot\\imagenes\\tilde.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7810"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XdOAuec5foS2LAk2VkwJAbvcbCO1cY/09Mx4GirBqr4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 21 Aug 2025 18:12:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XdOAuec5foS2LAk2VkwJAbvcbCO1cY/09Mx4GirBqr4="
         }
       ]
     },

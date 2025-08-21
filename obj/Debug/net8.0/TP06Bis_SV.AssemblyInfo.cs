@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TP06Bis_SV")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+15aeac30b767c6e9792cce4bd0d26faae6e7a8a1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+54435a67a1098a7afe03707f0c6073fefb51cc61")]
 [assembly: System.Reflection.AssemblyProductAttribute("TP06Bis_SV")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TP06Bis_SV")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
